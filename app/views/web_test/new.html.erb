@@ -1,0 +1,12 @@
+<h1>Add test</h1>
+<div class="admin-form">
+<% form_for @web_test, :url => web_test_index_path do |f| %>
+  <%= f.error_messages %>
+  <%= render :partial => "form", :object => f %>
+  <div class="line submit">
+    <%= f.submit 'Add' %>
+  </div>
+<% end %>
+</div>
+<br />
+<%= link_to "Back", web_test_index_path %>

@@ -1,0 +1,277 @@
+a, a:visited {
+  color: #dd0000;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+h2 {
+  margin: 30px 0 5px;
+  font: 24px "trebuchet ms", sans-serif;
+}
+
+input.title {
+  width: 600px;
+}
+
+input.short {
+  width: 80px;
+}
+
+div.b-logo {
+  margin: 10px 0;
+}
+
+div.b-logo img {
+  padding: 5px;
+  border: 1px solid #aaa;
+}
+
+div.a-logo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 20px 10px;
+  background-color: #02212E;
+  -moz-border-radius-bottomleft: 12px;
+  -webkit-border-radius-bottomleft: 12px;
+}
+
+div.admin {
+  padding: 40px 20px 20px;
+  font: 14px tahoma, sans-serif;
+}
+
+div.admin div.box {
+  border-bottom: 40px solid #ccc;
+  border-top: 2px solid #444;
+  padding: 20px;
+  margin: 0 -20px;
+}
+
+div.admin .box table textarea {
+  padding: 5px;
+  width: 90%;
+  height: 150px;
+  font: 12px tahoma, sans-serif;
+}
+
+div.admin .business {
+  background-color: #eee;
+}
+
+div.admin .deals {
+  background-color: #d1f7b7;
+}
+
+div.admin .offers {
+  background-color: #aed1e0;
+}
+
+div.admin .review {
+  background-color: #e8fec4;
+}
+
+div.admin .review table.admin td, div.admin .review table.admin th {
+  border-color: #869372;
+}
+
+div.admin .offers table.admin td, div.admin .offers table.admin th {
+  border-color: #539ebf;
+}
+
+div.admin .deals table.admin td, div.admin .deals table.admin th {
+  border-color: #738865;
+}
+
+div.admin .business select, div.admin .business input {
+  width: 250px;
+}
+
+/*admin tables*/
+table.admin {
+  width: 100%;
+  margin: 0 0 20px;
+}
+
+table.admin tr:hover td {
+  background-color: #ffe;
+}
+
+table.admin tr.add-new td {
+  border-top: 2px solid #000;
+  background-color: #ffc;
+}
+
+table.admin th, table.admin td {
+  padding: 10px;
+  vertical-align: top;
+}
+
+table.admin td {
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+table.admin td.date {
+  width: 200px;
+}
+
+table.admin td.date select {
+  margin: 0 5px 5px 0;
+}
+
+table.admin th {
+  border-bottom: 2px solid #aaa;
+  font-weight: bold;
+}
+
+table.admin th.actions {
+  width: 130px;
+}
+
+/*navigation*/
+div.navigation {
+  height: 40px;
+  background-color: #02212E;
+  font: 14px tahoma, sans-serif;
+}
+
+div.navigation.footer {
+  margin:  30px -20px -20px;
+}
+
+div.navigation a {
+  color: #92D000;
+}
+
+div.navigation ul {
+  padding: 0 20px;
+}
+
+div.navigation li {
+  float: left;
+}
+
+div.navigation li a {
+  display: block;
+  padding: 0 10px;
+  height: 40px;
+  line-height: 38px;
+  background-color: #0072ad;
+  border-right: 1px solid #02212E;
+  color: #fff;
+  text-decoration: none;
+}
+
+div.navigation li a:hover {
+  background-color: #1c8ebf;
+}
+
+
+/*admin form*/
+div.admin-form input, div.admin-form textarea {
+  font: 16px tahoma, sans-serif;
+}
+
+div.admin-form label {
+  display: block;
+  margin-bottom: 3px;
+  color: #333;
+}
+
+div.admin-form textarea {
+  padding: 5px;
+  width: 590px;
+  height: 200px;
+  font-size: 14px;
+}
+
+div.admin-form .line {
+  padding: 7px 0;
+  clear: both;
+}
+
+div.admin-form div.box .line.submit {
+  position: relative;
+  bottom: -60px;
+}
+
+div.admin-form .line.submit input {
+  width: auto;
+  font-size: 14px;
+  padding: 3px 10px;
+}
+
+div.line.column {
+  width: 85px;
+  float: left;
+  clear: none;
+  margin-right: 40px;
+}
+
+
+/*errors begin*/
+#information_messages{
+	clear: both;
+	margin-top: 0.2em;
+	margin-bottom: 0.3em;
+}
+
+#information_messages ul {
+  margin-bottom: 0;
+  list-style: none;
+  padding: 4px;
+}
+#information_messages ul li {
+  margin-left: 3em;
+}
+
+#information_messages ul.error {
+  border-top: 1px solid #ff0000;
+  border-bottom: 1px solid #ff0000;
+  background: #fcf6d0 url(/images/messages/error_m.gif) 1em 50% no-repeat;
+}
+
+#information_messages ul.info {
+  border-top: 1px solid #ecd757;
+  border-bottom: 1px solid #ecd757;
+  background: #fcf6d0 url(/images/messages/info_m.gif) 1em 50% no-repeat;
+}
+
+#information_messages ul.confirm {
+  border-top: 1px solid #009900;
+  border-bottom: 1px solid #009900;
+  background: #fcf6d0 url(/images/messages/notice_m.gif) 1em 50% no-repeat;
+}
+
+#information_messages ul.warn {
+  border-top: 1px solid #ecd757;
+  border-bottom: 1px solid #ecd757;
+  background: #fcf6d0 url(/images/messages/warn_m.gif) 1em 50% no-repeat;
+}
+/*errors end*/
+
+.errorExplanation {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.errorExplanation h2 {
+    padding: 10px;
+    margin-bottom: 5px;
+    color: #fff;
+    background-color: #dd0000;
+    font-size: 14px;
+}
+
+.errorExplanation li {
+    font-weight: bold;
+}
+
+.errorExplanation p, .errorExplanation ul {
+    padding: 5px 10px;
+}
+ */

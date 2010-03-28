@@ -1,0 +1,12 @@
+<h1>Добавить страницу</h1>
+<div class="admin-form">
+<% form_for @page, :url => admin_page_index_path do |f| %>
+  <%= f.error_messages %>
+  <%= render :partial => "form", :object => f %>
+  <div class="line submit">
+    <%= f.submit 'Добавить' %>
+  </div>
+<% end %>
+</div>
+<br />
+<%= link_to "Назад", admin_page_index_path %>

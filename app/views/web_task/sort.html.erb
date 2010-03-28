@@ -1,0 +1,24 @@
+<h1>Сортировка страниц (<%=link_to "назад", admin_page_index_path() %>)</h1>
+<table class="admin">
+	<tr>
+		<th>Id</th>
+		<th>Название</th>
+		<th>Название ссылки</th>
+	</tr>	
+</table>
+<ul id="sort_box">
+<% @pages.each do |page|%>
+<li id="sort_box_li_<%=page.id%>" style="margin:10px;padding:10px; border:1px solid #CCC;"><%=page.name%></li>
+<% end %>
+</ul>
+
+<script type="text/javascript">
+Event.observe(window, 'load', function(){
+	Sortable.create("sort_box", {
+        tag: 'li',
+        onUpdate: function(){
+			new Ajax.Request("/admin/page/update_sort",{ method: "post", postBody: Sortable.serialize('sort_box')});
+		}  
+    });
+});
+</script>

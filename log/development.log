@@ -1,0 +1,319 @@
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (163.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (78.4ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateWebTests (20100327213912)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "web_tests" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "launched" boolean DEFAULT 'f', "resulted_at" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100327213912')[0m
+Migrating to CreateWebTasks (20100327215034)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "web_tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "web_test_id" integer, "url" varchar(255), "http_method" integer DEFAULT 0, "http_params" text DEFAULT '', "count_repeat" integer DEFAULT 0, "sort" integer DEFAULT 0, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100327215034')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("web_tasks")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("web_tests")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateWebTests (20100327213912)
+Migrating to CreateWebTasks (20100327215034)
+Migrating to CreateWebResults (20100327220429)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "web_results" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "web_task_id" integer, "count" integer DEFAULT 0, "cpu_avr1" varchar(255), "cpu_avr5" varchar(255), "cpu_avr15" varchar(255), "mem_total" varchar(255), "mem_used" varchar(255), "mem_free" varchar(255), "swap_total" varchar(255), "swap_used" varchar(255), "swap_free" varchar(255), "process_all" integer, "process_running" integer, "server_load_time" decimal, "web_load_time" decimal, "html_data" text, "time_of_test" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100327220429')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("web_results")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("web_tasks")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("web_tests")[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-03-28 01:54:51) [GET]
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 53ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/rails/info/properties]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-28 22:09:31) [GET]
+
+ActionView::MissingTemplate (Missing template index/index.erb in view path app/views):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-28 22:10:06) [GET]
+
+ActionView::MissingTemplate (Missing template index/index.erb in view path app/views):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-28 22:10:23) [GET]
+Rendering index/index
+Completed in 77ms (View: 75, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-28 22:10:24) [GET]
+Rendering index/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-28 22:10:24) [GET]
+Rendering index/index
+Completed in 3ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-28 22:10:24) [GET]
+Rendering index/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-28 22:46:41) [GET]
+Rendering index/index
+Completed in 3ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing WebTestController#index (for 127.0.0.1 at 2010-03-28 22:48:37) [GET]
+  [4;36;1mWebTest Load (0.6ms)[0m   [0;1mSELECT * FROM "web_tests" ORDER BY name, created_at DESC LIMIT 20 OFFSET 0[0m
+Rendering web_test/index
+Completed in 26ms (View: 19, DB: 1) | 200 OK [http://127.0.0.1/web_test]
+
+
+Processing WebTestController#index (for 127.0.0.1 at 2010-03-28 22:50:18) [GET]
+  [4;35;1mWebTest Load (0.4ms)[0m   [0mSELECT * FROM "web_tests" ORDER BY name, created_at DESC LIMIT 20 OFFSET 0[0m
+Rendering web_test/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/web_test]
+
+
+Processing WebTestController#new (for 127.0.0.1 at 2010-03-28 22:50:19) [GET]
+Rendering web_test/new
+Rendered web_test/_form (1.1ms)
+Completed in 65ms (View: 58, DB: 0) | 200 OK [http://127.0.0.1/web_test/new]
+
+
+Processing WebTestController#index (for 127.0.0.1 at 2010-03-28 22:50:20) [GET]
+  [4;36;1mWebTest Load (0.4ms)[0m   [0;1mSELECT * FROM "web_tests" ORDER BY name, created_at DESC LIMIT 20 OFFSET 0[0m
+Rendering web_test/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/web_test]
+
+
+Processing WebTestController#index (for 127.0.0.1 at 2010-03-28 22:53:27) [GET]
+  [4;35;1mWebTest Load (0.4ms)[0m   [0mSELECT * FROM "web_tests" ORDER BY name, created_at DESC LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering web_test/index
+Rendered _shared/_menu (0.5ms)
+Rendered _shared/_messages (1.0ms)
+Completed in 23ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/web_test]
+
+
+Processing WebTestController#index (for 127.0.0.1 at 2010-03-28 22:53:28) [GET]
+  [4;36;1mWebTest Load (0.4ms)[0m   [0;1mSELECT * FROM "web_tests" ORDER BY name, created_at DESC LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering web_test/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test]
+
+
+Processing WebTestController#new (for 127.0.0.1 at 2010-03-28 22:53:29) [GET]
+Rendering template within layouts/application
+Rendering web_test/new
+Rendered web_test/_form (0.6ms)
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.1ms)
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://127.0.0.1/web_test/new]
+
+
+Processing WebTestController#index (for 127.0.0.1 at 2010-03-28 22:53:31) [GET]
+  [4;35;1mWebTest Load (0.4ms)[0m   [0mSELECT * FROM "web_tests" ORDER BY name, created_at DESC LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering web_test/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test]
+
+
+Processing WebTestController#index (for 127.0.0.1 at 2010-03-28 22:54:09) [GET]
+  [4;36;1mWebTest Load (0.4ms)[0m   [0;1mSELECT * FROM "web_tests" ORDER BY name, created_at DESC LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering web_test/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test]
+
+
+Processing WebTestController#new (for 127.0.0.1 at 2010-03-28 22:55:50) [GET]
+Rendering template within layouts/application
+Rendering web_test/new
+Rendered web_test/_form (0.7ms)
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.1ms)
+Completed in 24ms (View: 11, DB: 0) | 200 OK [http://127.0.0.1/web_test/new]
+
+
+Processing WebTestController#create (for 127.0.0.1 at 2010-03-28 22:56:00) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"jj9C7vzzwpdm0sYArN0z6Me+M8/vXrczF3o/VdqiuXw=", "web_test"=>{"name"=>"First test"}}
+  [4;35;1mWebTest Create (0.3ms)[0m   [0mINSERT INTO "web_tests" ("name", "created_at", "resulted_at", "updated_at", "launched") VALUES('First test', '2010-03-28 19:56:00', NULL, '2010-03-28 19:56:00', 'f')[0m
+Redirected to http://127.0.0.1:3000/web_test/1/edit
+Completed in 110ms (DB: 0) | 302 Found [http://127.0.0.1/web_test]
+
+
+Processing WebTestController#edit (for 127.0.0.1 at 2010-03-28 22:56:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mWebTest Load (0.2ms)[0m   [0;1mSELECT * FROM "web_tests" WHERE ("web_tests"."id" = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering web_test/edit
+Rendered web_test/_form (0.6ms)
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.1ms)
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-28 22:56:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/messages/notice_m.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing WebTestController#edit (for 127.0.0.1 at 2010-03-28 22:56:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mWebTest Load (0.3ms)[0m   [0mSELECT * FROM "web_tests" WHERE ("web_tests"."id" = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering web_test/edit
+Rendered web_test/_form (0.7ms)
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.1ms)
+Completed in 59ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/edit]
+
+
+Processing WebTestController#index (for 127.0.0.1 at 2010-03-28 22:56:32) [GET]
+  [4;36;1mWebTest Load (0.6ms)[0m   [0;1mSELECT * FROM "web_tests" ORDER BY name, created_at DESC LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering web_test/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.1ms)
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://127.0.0.1/web_test]
+
+
+Processing WebTestController#edit (for 127.0.0.1 at 2010-03-28 22:56:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mWebTest Load (0.2ms)[0m   [0mSELECT * FROM "web_tests" WHERE ("web_tests"."id" = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering web_test/edit
+Rendered web_test/_form (0.7ms)
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.1ms)
+Completed in 15ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/edit]
+
+
+Processing WebTestController#update (for 127.0.0.1 at 2010-03-28 22:56:35) [PUT]
+  Parameters: {"commit"=>"Edit", "authenticity_token"=>"jj9C7vzzwpdm0sYArN0z6Me+M8/vXrczF3o/VdqiuXw=", "id"=>"1", "web_test"=>{"name"=>"First test"}}
+  [4;36;1mWebTest Load (0.2ms)[0m   [0;1mSELECT * FROM "web_tests" WHERE ("web_tests"."id" = 1) ORDER BY created_at DESC[0m
+Redirected to http://127.0.0.1:3000/web_test/1/edit
+Completed in 9ms (DB: 0) | 302 Found [http://127.0.0.1/web_test/1]
+
+
+Processing WebTestController#edit (for 127.0.0.1 at 2010-03-28 22:56:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mWebTest Load (0.2ms)[0m   [0mSELECT * FROM "web_tests" WHERE ("web_tests"."id" = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering web_test/edit
+Rendered web_test/_form (0.6ms)
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.1ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/edit]
+
+
+Processing WebTestController#index (for 127.0.0.1 at 2010-03-28 22:56:37) [GET]
+  [4;36;1mWebTest Load (0.6ms)[0m   [0;1mSELECT * FROM "web_tests" ORDER BY name, created_at DESC LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering web_test/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.1ms)
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://127.0.0.1/web_test]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-28 22:56:41) [GET]
+Rendering template within layouts/application
+Rendering index/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-28 22:57:42) [GET]
+Rendering template within layouts/application
+Rendering index/index
+Rendered _shared/_menu (0.4ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-28 22:57:43) [GET]
+Rendering template within layouts/application
+Rendering index/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-03-28 22:57:44) [GET]
+Rendering template within layouts/application
+Rendering index/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/]

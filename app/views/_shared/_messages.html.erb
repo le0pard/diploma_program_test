@@ -1,0 +1,12 @@
+<div id="information_messages">
+	<% if flash[:error] -%>
+	<ul class="error">
+		<li><%= flash[:error] %></li>
+	</ul>
+	<% end -%>
+	<% if flash[:notice] -%>
+	<ul class="confirm">
+		<li><%= flash[:notice] %></li>
+	</ul>
+	<% end -%>
+</div>

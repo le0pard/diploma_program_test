@@ -1,0 +1,21 @@
+<h1>Tests</h1>
+<table class="admin">
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Started?</th>
+		<th>Done?</th>
+		<th></th>
+	</tr>	
+	<% @web_tests.each do |web_test|%>
+		<tr>
+			<td><%=web_test.id%></td>
+			<td><%=web_test.name%></td>
+			<td><%=web_test.launched ? "Yes" : "No" %></td>
+			<td><%=web_test.resulted_at ? "Yes" : "No" %></td>
+			<td><%=link_to "Edit", edit_web_test_path(web_test)%> | <%= link_to 'Delete', web_test_path(web_test), :confirm => 'Delete?', :method => :delete %></td>
+		</tr>
+	<% end %>
+</table>
+<%=link_to "Add", new_web_test_path() %>
+<%= will_paginate @web_tests %>
