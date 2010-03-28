@@ -1,0 +1,43 @@
+<div style="width:350px;float:left;">
+<h1>Edit test</h1>
+<div class="admin-form">
+Web test: <strong><%=h @web_test.name %></strong>
+</div>
+<br />
+<%= link_to "Back", web_test_index_path %>
+</div>
+
+<div style="width:500px;float:left;">
+<h1>Tasks</h1>
+<table class="admin" id="sort_box">
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Url</th>
+		<th>Method</th>
+		<th></th>
+	</tr>	
+	<% @web_test.web_tasks.each do |web_task|%>
+		<tr id="sort_box_li_<%=web_task.id%>">
+			<td><%=web_task.id%></td>
+			<td><%=h web_task.name%></td>
+			<td><%=h web_task.url %></td>
+			<td><%=h web_task.http_method %></td>
+			<td><%=link_to "Edit", edit_web_test_web_task_path(:id => web_task.id, :web_test_id => web_task.web_test_id)%> | <%= link_to 'Delete', web_test_web_task_path(:id => web_task.id, :web_test_id => web_task.web_test_id), :confirm => 'Delete?', :method => :delete %></td>
+		</tr>
+	<% end %>
+</table>
+<%=link_to "Add", new_web_test_web_task_path(:web_test_id => @web_test.id) %>
+</div>
+
+
+<script type="text/javascript">
+Event.observe(window, 'load', function(){
+	Sortable.create("sort_box", {
+        tag: 'tr',
+        onUpdate: function(){
+			new Ajax.Request("/page/update_sort",{ method: "post", postBody: Sortable.serialize('sort_box')});
+		}  
+    });
+});
+</script>

@@ -17,6 +17,10 @@ class WebTestController < ApplicationController
       render :action => :new
     end
   end
+  
+  def show
+    @web_test = WebTest.find(params[:id])
+  end
 
   def edit
     @web_test = WebTest.find(params[:id])

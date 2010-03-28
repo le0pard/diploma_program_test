@@ -13,7 +13,7 @@
 			<td><%=web_test.name%></td>
 			<td><%=web_test.launched ? "Yes" : "No" %></td>
 			<td><%=web_test.resulted_at ? "Yes" : "No" %></td>
-			<td><%=link_to "Edit", edit_web_test_path(web_test)%> | <%= link_to 'Delete', web_test_path(web_test), :confirm => 'Delete?', :method => :delete %></td>
+			<td><%=link_to "Show", web_test_path(web_test)%> | <%=link_to "Edit", edit_web_test_path(web_test)%> | <%= link_to 'Delete', web_test_path(web_test), :confirm => 'Delete?', :method => :delete %></td>
 		</tr>
 	<% end %>
 </table>

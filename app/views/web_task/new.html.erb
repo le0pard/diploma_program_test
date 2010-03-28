@@ -1,12 +1,13 @@
-<h1>Добавить страницу</h1>
+<h1>Add task</h1>
 <div class="admin-form">
-<% form_for @page, :url => admin_page_index_path do |f| %>
+<% form_for @web_task, :url => web_test_web_task_index_path() do |f| %>
   <%= f.error_messages %>
+  <%= f.hidden_field :web_test_id%>
   <%= render :partial => "form", :object => f %>
   <div class="line submit">
-    <%= f.submit 'Добавить' %>
+    <%= f.submit 'Add' %>
   </div>
 <% end %>
 </div>
 <br />
-<%= link_to "Назад", admin_page_index_path %>
+<%= link_to "Back", web_test_path(:id => @web_task.web_test_id) %>

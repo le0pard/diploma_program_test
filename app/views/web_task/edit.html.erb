@@ -1,12 +1,12 @@
-<h1>Редактировать страницу</h1>
+<h1>Edit task</h1>
 <div class="admin-form">
-<% form_for @page, :url => admin_page_path do |f| %>
+<% form_for @web_task, :url => web_test_web_task_path() do |f| %>
   <%= f.error_messages %>
   <%= render :partial => "form", :object => f %>
   <div class="line submit">
-    <%= f.submit 'Редактировать' %>
+    <%= f.submit 'Edit' %>
   </div>
 <% end %>
 </div>
 <br />
-<%= link_to "Назад", admin_page_index_path %>
+<%= link_to "Back", web_test_path(:id => @web_task.web_test_id) %>

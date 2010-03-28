@@ -9,8 +9,9 @@ ActionController::Routing::Routes.draw do |map|
   #   map.purchase 'products/:id/purchase', :controller => 'catalog', :action => 'purchase'
   # This route can be invoked with purchase_url(:id => product.id)
 
-  map.resources :web_test
-  map.resources :web_task
+  map.resources :web_test do |web_test|
+    web_test.resources :web_task, :collection => { :sort => :post }
+  end
   map.root :controller => :web_test
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):

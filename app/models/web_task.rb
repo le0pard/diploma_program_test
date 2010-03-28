@@ -10,9 +10,12 @@ class WebTask < ActiveRecord::Base
   #   sort         : integer 
   #   created_at   : datetime 
   #   updated_at   : datetime 
+  #   name         : string 
   # =======================
 
   
   belongs_to :web_test
   has_many :web_results
+  
+  default_scope :order => 'sort'
 end

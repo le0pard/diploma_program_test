@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100327220429) do
+ActiveRecord::Schema.define(:version => 20100328200715) do
 
   create_table "web_results", :force => true do |t|
     t.integer  "web_task_id"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(:version => 20100327220429) do
     t.integer  "sort",         :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
   end
 
   create_table "web_tests", :force => true do |t|
