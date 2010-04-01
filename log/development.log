@@ -3583,3 +3583,25 @@ Rendering web_test/show
 Rendered _shared/_menu (8.1ms)
 Rendered _shared/_messages (0.1ms)
 Completed in 69ms (View: 61, DB: 1) | 200 OK [http://127.0.0.1/web_test/1]
+
+
+Processing WebTaskController#sort (for 127.0.0.1 at 2010-04-02 01:13:32) [POST]
+  Parameters: {"web_test_id"=>"1", "sort_box"=>["7", "2"]}
+  [4;36;1mWebTask Load (0.3ms)[0m   [0;1mSELECT * FROM "web_tasks" WHERE ("web_tasks"."id" = 7) ORDER BY sort[0m
+  [4;35;1mWebTask Update (0.2ms)[0m   [0mUPDATE "web_tasks" SET "updated_at" = '2010-04-01 22:13:32', "sort" = 1 WHERE "id" = 7[0m
+  [4;36;1mWebTask Load (0.8ms)[0m   [0;1mSELECT * FROM "web_tasks" WHERE ("web_tasks"."id" = 2) ORDER BY sort[0m
+  [4;35;1mWebTask Update (0.1ms)[0m   [0mUPDATE "web_tasks" SET "updated_at" = '2010-04-01 22:13:32', "sort" = 2 WHERE "id" = 2[0m
+Completed in 227ms (View: 2, DB: 1) | 200 OK [http://127.0.0.1/web_test/1/web_task/sort]
+
+
+Processing WebTaskController#sort (for 127.0.0.1 at 2010-04-02 01:13:39) [POST]
+  Parameters: {"web_test_id"=>"1", "sort_box"=>["2", "7"]}
+  [4;36;1mWebTask Load (0.4ms)[0m   [0;1mSELECT * FROM "web_tasks" WHERE ("web_tasks"."id" = 2) ORDER BY sort[0m
+  [4;35;1mWebTask Update (0.2ms)[0m   [0mUPDATE "web_tasks" SET "updated_at" = '2010-04-01 22:13:39', "sort" = 1 WHERE "id" = 2[0m
+  [4;36;1mWebTask Load (0.4ms)[0m   [0;1mSELECT * FROM "web_tasks" WHERE ("web_tasks"."id" = 7) ORDER BY sort[0m
+  [4;35;1mWebTask Update (0.2ms)[0m   [0mUPDATE "web_tasks" SET "updated_at" = '2010-04-01 22:13:39', "sort" = 2 WHERE "id" = 7[0m
+Completed in 218ms (View: 2, DB: 1) | 200 OK [http://127.0.0.1/web_test/1/web_task/sort]
+  [4;36;1mWebTest Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tests" WHERE ("web_tests"."launched" = 't' AND "web_tests"."resulted_at" IS NULL) ORDER BY created_at DESC[0m
+  [4;36;1mWebTest Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tests" WHERE ("web_tests"."launched" = 't' AND "web_tests"."resulted_at" IS NULL) ORDER BY created_at DESC[0m
+  [4;36;1mWebTest Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tests" WHERE ("web_tests"."launched" = 't' AND "web_tests"."resulted_at" IS NULL) ORDER BY created_at DESC[0m
+  [4;36;1mWebTest Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tests" WHERE ("web_tests"."launched" = 't' AND "web_tests"."resulted_at" IS NULL) ORDER BY created_at DESC[0m

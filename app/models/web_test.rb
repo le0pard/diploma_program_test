@@ -14,6 +14,8 @@ class WebTest < ActiveRecord::Base
   
   default_scope :order => 'created_at DESC'
   
+  named_scope :waiting, :conditions => { :launched => true, :resulted_at => nil }
+  
   
   def activate!
     self.update_attribute(:launched, true)
