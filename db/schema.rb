@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100328200715) do
+ActiveRecord::Schema.define(:version => 20100401163615) do
 
   create_table "web_results", :force => true do |t|
     t.integer  "web_task_id"
@@ -49,6 +49,17 @@ ActiveRecord::Schema.define(:version => 20100328200715) do
     t.string   "name"
     t.boolean  "launched",    :default => false
     t.datetime "resulted_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "web_url_results", :force => true do |t|
+    t.integer  "web_task_id"
+    t.integer  "count",         :default => 0
+    t.decimal  "web_load_time"
+    t.text     "base_uri"
+    t.text     "content_type"
+    t.text     "content_data"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

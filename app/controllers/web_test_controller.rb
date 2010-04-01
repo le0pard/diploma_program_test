@@ -42,4 +42,10 @@ class WebTestController < ApplicationController
     redirect_to :action => :index
   end
   
+  def start
+    web_test = WebTest.find(params[:id]) if params[:id]
+    web_test.activate! if web_test
+    redirect_to :action => :show, :id => web_test.id
+  end
+  
 end

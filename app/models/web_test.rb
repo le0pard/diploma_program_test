@@ -14,4 +14,9 @@ class WebTest < ActiveRecord::Base
   
   default_scope :order => 'created_at DESC'
   
+  
+  def activate!
+    self.update_attribute(:launched, true)
+  end
+  
 end

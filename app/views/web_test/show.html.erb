@@ -2,31 +2,51 @@
 <h1>Edit test</h1>
 <div class="admin-form">
 Web test: <strong><%=h @web_test.name %></strong>
+<div class="line submit" style="margin:20px 0;">
+<% if !@web_test.launched? %>
+	<% form_tag start_web_test_path do |f| %>
+		<%= hidden_field_tag :id, @web_test.id %>
+		<%= submit_tag "Begin testing"%>
+	<% end %>
+<% else %>
+	<% if @web_test.resulted_at %>
+	<% else %>
+		Start testing... waiting...
+	<% end %>
+<% end %>
 </div>
+</div>
+<br />
 <br />
 <%= link_to "Back", web_test_index_path %>
 </div>
 
-<div style="width:500px;float:left;">
+<div style="float:left;">
 <h1>Tasks</h1>
-<table class="admin" id="sort_box">
-	<tr>
-		<th>Id</th>
-		<th>Name</th>
-		<th>Url</th>
-		<th>Method</th>
-		<th></th>
-	</tr>	
-	<% @web_test.web_tasks.each do |web_task|%>
-		<tr id="sort_box_li_<%=web_task.id%>">
+<ul id="sort_box">	
+<% @web_test.web_tasks.each do |web_task|%>
+	<li id="sort_box_li_<%=web_task.id%>">
+	<table class="admin" style="cursor:pointer;cursor:hand;">
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Url</th>
+			<th>Method</th>
+			<th>Count</th>
+			<th></th>
+		</tr>
+		<tr>
 			<td><%=web_task.id%></td>
 			<td><%=h web_task.name%></td>
 			<td><%=h web_task.url %></td>
-			<td><%=h web_task.http_method %></td>
+			<td><%= web_task.http_method_name %></td>
+			<td><%= web_task.count_repeat %></td>
 			<td><%=link_to "Edit", edit_web_test_web_task_path(:id => web_task.id, :web_test_id => web_task.web_test_id)%> | <%= link_to 'Delete', web_test_web_task_path(:id => web_task.id, :web_test_id => web_task.web_test_id), :confirm => 'Delete?', :method => :delete %></td>
 		</tr>
-	<% end %>
-</table>
+	</table>
+	</li>
+<% end %>	
+</ul>
 <%=link_to "Add", new_web_test_web_task_path(:web_test_id => @web_test.id) %>
 </div>
 
@@ -34,9 +54,9 @@ Web test: <strong><%=h @web_test.name %></strong>
 <script type="text/javascript">
 Event.observe(window, 'load', function(){
 	Sortable.create("sort_box", {
-        tag: 'tr',
+        tag: 'li',
         onUpdate: function(){
-			new Ajax.Request("/page/update_sort",{ method: "post", postBody: Sortable.serialize('sort_box')});
+			new Ajax.Request("/web_test/<%=@web_test.id%>/web_task/sort",{ method: "post", postBody: Sortable.serialize('sort_box')});
 		}  
     });
 });

@@ -9,7 +9,7 @@ ActionController::Routing::Routes.draw do |map|
   #   map.purchase 'products/:id/purchase', :controller => 'catalog', :action => 'purchase'
   # This route can be invoked with purchase_url(:id => product.id)
 
-  map.resources :web_test do |web_test|
+  map.resources :web_test, :collection => { :start => :post } do |web_test|
     web_test.resources :web_task, :collection => { :sort => :post }
   end
   map.root :controller => :web_test

@@ -16,6 +16,12 @@ class WebTask < ActiveRecord::Base
   
   belongs_to :web_test
   has_many :web_results
+  has_many :web_url_results
   
   default_scope :order => 'sort'
+  
+  def http_method_name
+    meth = ['GET', 'POST']
+    meth[http_method]
+  end
 end

@@ -2,3 +2,19 @@
 <%= form.label :name, "Name" %>
 <%= form.text_field :name %>
 </div>
+<div class="line">
+<%= form.label :url, "Url" %>
+<%= form.text_field :url %>
+</div>
+<div class="line">
+<%= form.label :http_method, "Method" %>
+<%= form.select :http_method, [["GET", 0], ["POST", 1]] %>
+</div>
+<div class="line">
+<%= form.label :http_params, "Params" %>
+<%= form.text_field :http_params %>
+</div>
+<div class="line">
+<%= form.label :count_repeat, "Count repeat" %>
+<%= form.select :count_repeat, (1..5000).to_a %>
+</div>
