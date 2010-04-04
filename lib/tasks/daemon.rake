@@ -18,7 +18,7 @@ namespace :daemon do
               5.times do |i|
                 if web_task.method_get?
                   temp_array << get_time_investigate(web_task.url, web_task.http_params)
-                  sleep 0.05
+                  sleep 0.1
                 elsif web_task.method_post?
                 end
               end
@@ -47,7 +47,7 @@ namespace :daemon do
                 web_result.count = @count
                 web_result.save
               end
-              sleep 5
+              sleep 0.5
             end
           end
           
