@@ -26,4 +26,5 @@ class WebResult < ActiveRecord::Base
 
   
   belongs_to :web_task
+  belongs_to :web_url_result
 end

@@ -8,6 +8,7 @@ namespace :daemon do
       web_test.web_tasks.each do |web_task|
           @mutex = Mutex.new
           @count = 0
+          @web_res_url_id = 0
           
           client_thread = Thread.new do
             #puts "#{web_task.count_repeat} times"
@@ -33,6 +34,7 @@ namespace :daemon do
               web_res_url.web_task = web_task
               puts "Process: #{prms.inspect}"
               web_res_url.save
+              @web_res_url_id = web_res_url.id
             end  
           end
           
@@ -45,9 +47,10 @@ namespace :daemon do
                 web_result = WebResult.new(prms)
                 web_result.web_task = web_task
                 web_result.count = @count
+                web_result.web_url_result_id = @web_res_url_id
                 web_result.save
               end
-              sleep 0.5
+              sleep 3
             end
           end
           
