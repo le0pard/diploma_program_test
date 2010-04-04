@@ -9,11 +9,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100401163615) do
+ActiveRecord::Schema.define(:version => 20100404194657) do
 
   create_table "web_results", :force => true do |t|
     t.integer  "web_task_id"
-    t.integer  "count",            :default => 0
+    t.integer  "count",             :default => 0
     t.string   "cpu_avr1"
     t.string   "cpu_avr5"
     t.string   "cpu_avr15"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(:version => 20100401163615) do
     t.datetime "time_of_test"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "web_url_result_id"
   end
 
   create_table "web_tasks", :force => true do |t|

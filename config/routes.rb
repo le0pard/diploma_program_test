@@ -11,6 +11,8 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :web_test, :collection => { :start => :post } do |web_test|
     web_test.resources :web_task, :collection => { :sort => :post }
+    web_test.statistic 'statistic', :controller => :statistic, :action => :index
+    web_test.statistic_data 'statistic_data', :controller => :statistic, :action => :data
   end
   map.root :controller => :web_test
 

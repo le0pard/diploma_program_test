@@ -24,4 +24,13 @@ class WebTask < ActiveRecord::Base
     meth = ['GET', 'POST']
     meth[http_method]
   end
+  
+  def method_get?
+    self.http_method == 0
+  end
+  
+  def method_post?
+    self.http_method == 1
+  end
+  
 end

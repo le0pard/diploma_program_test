@@ -14,4 +14,6 @@ class WebUrlResult < ActiveRecord::Base
 
 
   belongs_to :web_task
+  
+  default_scope :order => 'created_at'
 end

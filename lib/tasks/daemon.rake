@@ -2,11 +2,59 @@ require "#{RAILS_ROOT}/lib/client/main"
 namespace :daemon do
   desc "Start daemon for web task"
   task :start => :environment do
-    # Make an object to represent the XML-RPC server.
-    server = XMLRPC::Client.new( "127.0.0.1", '/', 20100)
+    Thread.abort_on_exception = true # for debug
     
     WebTest.waiting.all.each do |web_test|
-      
+      web_test.web_tasks.each do |web_task|
+          @mutex = Mutex.new
+          @count = 0
+          
+          client_thread = Thread.new do
+            #puts "#{web_task.count_repeat} times"
+            web_task.count_repeat.times do |cnt|
+              @count = cnt
+             
+              temp_array = []
+              5.times do |i|
+                if web_task.method_get?
+                  temp_array << get_time_investigate(web_task.url, web_task.http_params)
+                  sleep 0.05
+                elsif web_task.method_post?
+                end
+              end
+              
+              sum = 0
+              temp_array.compact!
+              temp_array.each { |t_a| sum += t_a if t_a }
+              result = sum / temp_array.size
+              
+              prms = {:web_load_time => result, :count => cnt, :base_uri => web_task.url}
+              web_res_url = WebUrlResult.new(prms)
+              web_res_url.web_task = web_task
+              puts "Process: #{prms.inspect}"
+              web_res_url.save
+            end  
+          end
+          
+          server_thread = Thread.new do
+            # Make an object to represent the XML-RPC server.
+            server = XMLRPC::Client.new( "127.0.0.1", '/', 20100)
+            while client_thread.alive? do
+              prms = get_information_by_server(server)
+              if prms
+                web_result = WebResult.new(prms)
+                web_result.web_task = web_task
+                web_result.count = @count
+                web_result.save
+              end
+              sleep 5
+            end
+          end
+          
+          Thread.list.each { |t| t.join if t != Thread.main }
+        end
+      end
+=begin      
       # Call the remote server and get our result
       cpu = server.call("system_server_info.cpu_info")
       
@@ -89,11 +137,6 @@ namespace :daemon do
       puts 'Message = ' + resp.message
       resp.each {|key, val| puts key + ' = ' + val}
       puts data
-
-
-      
-    end
-    
+=end
   end
-
 end
