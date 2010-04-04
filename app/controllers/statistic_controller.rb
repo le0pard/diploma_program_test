@@ -1,58 +1,63 @@
 class StatisticController < ApplicationController
   
   def index
-    @graph = open_flash_chart_object( 600, 300, web_test_statistic_data_path(:web_test_id => 1, :format => :json))
+    @graph = open_flash_chart_object(1000, 400, web_test_statistic_data_path(:web_test_id => 1, :format => :js))
   end
   
   def data
     respond_to do |response|
-      response.json {
+      response.js {
+        # based on this example - http://teethgrinder.co.uk/open-flash-chart-2/data-lines-2.php
+        title = Title.new("Multiple Lines")
+    
         data1 = []
         data2 = []
-        year = Time.now.year
-    
-        31.times do |i|
-          x = "#{year}-1-#{i+1}".to_time.to_i
-          y = (Math.sin(i+1) * 2.5) + 10
-    
-          data1 << ScatterValue.new(x,y)
-          data2 << (Math.cos(i+1) * 1.9) + 4
+        max_value = 0
+        WebTask.first.web_url_results.each do |web_url_result|
+          data1 << web_url_result.web_load_time
+          data2 << web_url_result.web_load_time + 2
+          if max_value < web_url_result.web_load_time
+            max_value = web_url_result.web_load_time
+          end
         end
     
-        dot = HollowDot.new
-        dot.size = 3
-        dot.halo_size = 2
-        dot.tooltip = "#date:d M y#<br>Value: #val#"
-    
-        line = ScatterLine.new("#DB1750", 3)
+        line = Line.new
+        line.text = "Line"
+        line.width = 2
+        line.colour = '#5E4725'
+        line.dot_size = 10
         line.values = data1
-        line.default_dot_style = dot
-    
-        x = XAxis.new
-        x.set_range("#{year}-1-1".to_time.to_i, "#{year}-1-31".to_time.to_i)
-        x.steps = 86400
-    
-        labels = XAxisLabels.new
-        labels.text = "#date: l jS, M Y#"
-        labels.steps = 86400
-        labels.visible_steps = 2
-        labels.rotate = 90
-    
-        x.labels = labels
+        
+        line2 = Line.new
+        line2.text = "Line2"
+        line2.width = 2
+        line2.colour = '#DB1750'
+        line2.dot_size = 5
+        line2.values = data2
     
         y = YAxis.new
-        y.set_range(0,15,5)
+        y.set_range(0,max_value + 2,0.1)
+        
+        x = XAxis.new
+        x.steps = 5
     
-        chart = OpenFlashChart.new
-        title = Title.new(data2.size)
+        x_legend = XLegend.new("MY X Legend")
+        x_legend.set_style('{font-size: 20px; color: #778877}')
     
-        chart.title = title
-        chart.add_element(line)
-        chart.x_axis = x
+        y_legend = YLegend.new("MY Y Legend")
+        y_legend.set_style('{font-size: 20px; color: #770077}')
+    
+        chart =OpenFlashChart.new
+        chart.set_title(title)
+        chart.set_x_legend(x_legend)
+        chart.set_y_legend(y_legend)
         chart.y_axis = y
-    
-        render :text => chart, :layout => false
+        chart.x_axis = x
 
+        chart.add_element(line)
+        chart.add_element(line2)
+    
+        render :text => chart.to_s, :layout => false
       }
     end
   end

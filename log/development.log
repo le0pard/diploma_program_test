@@ -5306,3 +5306,962 @@ Completed in 6ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statisti
 Processing StatisticController#data to json (for 127.0.0.1 at 2010-04-05 00:35:22) [GET]
   Parameters: {"web_test_id"=>"1"}
 Completed in 15ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=json]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:36:31) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.2ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to json (for 127.0.0.1 at 2010-04-05 00:36:31) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=json]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:41:11) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to json (for 127.0.0.1 at 2010-04-05 00:41:12) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=json]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:42:00) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to json (for 127.0.0.1 at 2010-04-05 00:42:01) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=json]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:42:01) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to json (for 127.0.0.1 at 2010-04-05 00:42:02) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=json]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:42:02) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to json (for 127.0.0.1 at 2010-04-05 00:42:02) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=json]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:42:03) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:42:03) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:42:03) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:42:03) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to json (for 127.0.0.1 at 2010-04-05 00:42:03) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=json]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:42:54) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.2ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to json (for 127.0.0.1 at 2010-04-05 00:42:55) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=json]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:43:18) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.2ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:43:19) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:43:19) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:43:20) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:43:20) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:43:21) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:43:25) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:43:25) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:45:27) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 21ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:45:28) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Completed in 5ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:45:43) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:45:44) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:45:53) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:45:54) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:46:02) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:46:03) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:48:05) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:48:05) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Completed in 13ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:50:04) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:50:05) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (16.6ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+Completed in 48ms (View: 0, DB: 17) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:50:20) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.5ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:50:21) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (15.7ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+Completed in 44ms (View: 0, DB: 16) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:50:39) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:50:39) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.6ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (58.7ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+Completed in 90ms (View: 0, DB: 59) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:51:37) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.5ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:51:38) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.9ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (14.6ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+Completed in 66ms (View: 0, DB: 16) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:53:43) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 16ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:53:43) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (15.2ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+Completed in 94ms (View: 0, DB: 16) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:54:43) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:54:43) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (19.1ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+Completed in 51ms (View: 0, DB: 20) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:54:44) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:54:45) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (15.5ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+Completed in 89ms (View: 0, DB: 16) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:54:52) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:54:52) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (14.9ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+Completed in 43ms (View: 0, DB: 16) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:55:16) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:55:17) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (16.2ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+Completed in 48ms (View: 0, DB: 17) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:57:54) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (1.8ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:57:55) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (15.2ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+Completed in 46ms (View: 0, DB: 16) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:58:08) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.2ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:58:08) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (15.1ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+Completed in 46ms (View: 0, DB: 16) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:59:55) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:59:55) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (16.9ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+
+NameError (undefined local variable or method `x' for #<StatisticController:0xb6ea31c8>):
+  app/controllers/statistic_controller.rb:31:in `data'
+  app/controllers/statistic_controller.rb:8:in `data'
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (38.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 00:59:57) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 00:59:57) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (14.7ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+
+NameError (undefined local variable or method `x' for #<StatisticController:0xb6f3b630>):
+  app/controllers/statistic_controller.rb:31:in `data'
+  app/controllers/statistic_controller.rb:8:in `data'
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (38.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:00:42) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:00:43) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (2.2ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (15.0ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+Completed in 50ms (View: 0, DB: 17) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:03:25) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:03:26) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.6ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (16.5ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (6.8ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 65ms (View: 0, DB: 24) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:03:27) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (47.9ms)
+Completed in 54ms (View: 51, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:03:27) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (22.9ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (13.1ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 88ms (View: 0, DB: 37) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:03:35) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:03:35) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.8ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (14.6ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (6.6ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 64ms (View: 0, DB: 22) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:03:42) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:03:43) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (17.8ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (6.2ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 70ms (View: 0, DB: 25) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:03:48) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:03:49) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (19.4ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (7.1ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 119ms (View: 0, DB: 27) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:04:10) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:04:11) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (2.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (14.7ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (6.6ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 67ms (View: 0, DB: 23) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:04:24) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 21ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:04:25) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (32.2ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (6.8ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 118ms (View: 0, DB: 40) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:05:17) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.2ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:05:18) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (15.3ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (6.2ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 64ms (View: 0, DB: 22) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:05:46) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.2ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:05:47) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (1.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (16.6ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (6.8ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 71ms (View: 0, DB: 24) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:07:06) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:07:07) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (15.2ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (7.0ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 68ms (View: 0, DB: 23) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:08:26) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.2ms)
+Rendered _shared/_messages (36.1ms)
+Completed in 45ms (View: 42, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:08:26) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (14.7ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (6.7ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 67ms (View: 0, DB: 22) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:10:32) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:10:33) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (16.2ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (7.2ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 118ms (View: 0, DB: 24) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:11:45) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:11:46) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (15.0ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (6.2ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 68ms (View: 0, DB: 22) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:12:16) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:12:17) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (17.9ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (7.4ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 74ms (View: 0, DB: 26) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:12:31) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:12:32) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (15.4ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (6.5ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 113ms (View: 0, DB: 23) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:12:36) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:12:37) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (15.3ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (7.1ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 70ms (View: 0, DB: 23) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:13:23) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:13:24) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (44.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (16.8ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (6.5ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 121ms (View: 0, DB: 67) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:14:06) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:14:07) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.6ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (14.7ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (12.7ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 79ms (View: 0, DB: 28) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:14:19) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:14:20) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (23.9ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (7.5ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 83ms (View: 0, DB: 32) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:14:29) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:14:29) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (14.5ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (6.5ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 64ms (View: 0, DB: 22) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:14:46) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:14:47) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (16.2ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (6.8ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 70ms (View: 0, DB: 24) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:14:58) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:14:59) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (19.3ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (6.9ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 120ms (View: 0, DB: 27) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:15:08) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:15:10) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.8ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (15.6ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (6.5ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 66ms (View: 0, DB: 23) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:15:49) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:15:49) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (16.5ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (6.7ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 75ms (View: 0, DB: 24) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:15:56) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:15:57) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (16.2ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebResult Load (6.7ms)[0m   [0mSELECT * FROM "web_results" WHERE ("web_results".web_task_id = 2) [0m
+Completed in 72ms (View: 0, DB: 24) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 01:17:24) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.2ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+
+
+Processing StatisticController#data to js (for 127.0.0.1 at 2010-04-05 01:17:24) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.7ms)[0m   [0;1mSELECT * FROM "web_tasks" ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebUrlResult Load (14.8ms)[0m   [0mSELECT * FROM "web_url_results" WHERE ("web_url_results".web_task_id = 2) ORDER BY created_at[0m
+Completed in 47ms (View: 0, DB: 15) | 200 OK [http://127.0.0.1/web_test/1/statistic_data?format=js]
