@@ -55,6 +55,7 @@ namespace :daemon do
           end
           
           Thread.list.each { |t| t.join if t != Thread.main }
+          web_test.update_attribute(:resulted_at, Time.now)
         end
       end
 =begin      

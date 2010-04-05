@@ -1,0 +1,54 @@
+<div class="admin-form" style="margin:40px 10px">
+	<div class="line">
+		<label for="web_task_id1">Select task:</label>
+		<select id="web_task_id1">
+			<% @main_selector.each do |web_task| %>
+				<option value="<%=web_task.id %>" <% if @web_task1 && @web_task1.id == web_task.id%> selected="selected" <% end %>><%=h web_task.name %></option>
+			<% end %>
+		</select>
+	</div>
+	<% if @web_task1 && @alternatives_selector %>
+	<div class="line">
+		<label for="web_task_id2">Select second task for comparison:</label>
+		<select id="web_task_id2">
+			<% @alternatives_selector.each do |web_task| %>
+				<option value="<%=web_task.id %>"><%=h web_task.name %></option>
+			<% end %>
+		</select>
+	</div>
+	<div class="line submit">
+		<input id="compare_web_tasks" type="button" value="Compare" />
+	</div>
+	<% end %>
+	<% if @compare_methods %>
+	<div class="line">
+		<label for="compare">What compare:</label>
+		<select id="compare">
+			<% @compare_methods.each do |meth| %>
+				<option value="<%=meth %>" <% if @compare_method_selected == meth%> selected="selected" <% end %>><%=h meth %></option>
+			<% end %>
+		</select>
+	</div>	
+	<% end %>
+</div>
+
+
+<div style="margin:30px">
+	<%=@graph if @graph %>
+</div>
+
+<script type="text/javascript">
+	Event.observe(window, 'load', function(){
+		$('web_task_id1').observe('change', function(){
+			location.href = "/compare_tasks/" + $F('web_task_id1');
+		});
+		$('compare_web_tasks').observe('click', function(){
+			if ($F('web_task_id1') && $F('web_task_id2')){
+				location.href = "/compare_tasks/" + $F('web_task_id1') + "/" + $F('web_task_id2');
+			}
+		});
+		$('compare').observe('change', function(){
+			location.href = "/compare_tasks/" + $F('web_task_id1') + "/" + $F('web_task_id2') + "?compare_method=" + $F('compare');
+		});
+	});	
+</script>

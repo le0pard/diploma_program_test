@@ -18,6 +18,10 @@ ActionController::Routing::Routes.draw do |map|
     web_test.statistic_process_data 'statistic_process_data', :controller => :statistic, :action => :process_data
     web_test.statistic_web_data 'statistic_web_data', :controller => :statistic, :action => :web_data
   end
+  map.compare_tasks_data 'compare_tasks_data/:web_task_id1/:web_task_id2', :controller => :statistic_comparison, :action => :data
+  map.compare_tasks 'compare_tasks/:web_task_id1/:web_task_id2', :controller => :statistic_comparison, :action => :index
+  map.compare_task 'compare_tasks/:web_task_id1', :controller => :statistic_comparison, :action => :index
+  map.connect 'compare_tasks', :controller => :statistic_comparison, :action => :index
   map.root :controller => :web_test
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
