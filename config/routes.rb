@@ -12,7 +12,11 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :web_test, :collection => { :start => :post } do |web_test|
     web_test.resources :web_task, :collection => { :sort => :post }
     web_test.statistic 'statistic', :controller => :statistic, :action => :index
-    web_test.statistic_data 'statistic_data', :controller => :statistic, :action => :data
+    web_test.statistic_cpu_data 'statistic_cpu_data', :controller => :statistic, :action => :cpu_data
+    web_test.statistic_memory_data 'statistic_memory_data', :controller => :statistic, :action => :memory_data
+    web_test.statistic_swap_data 'statistic_swap_data', :controller => :statistic, :action => :swap_data
+    web_test.statistic_process_data 'statistic_process_data', :controller => :statistic, :action => :process_data
+    web_test.statistic_web_data 'statistic_web_data', :controller => :statistic, :action => :web_data
   end
   map.root :controller => :web_test
 

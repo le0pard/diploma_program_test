@@ -13,7 +13,7 @@ ActiveRecord::Schema.define(:version => 20100404194657) do
 
   create_table "web_results", :force => true do |t|
     t.integer  "web_task_id"
-    t.integer  "count",             :default => 0
+    t.integer  "count",                                            :default => 0
     t.string   "cpu_avr1"
     t.string   "cpu_avr5"
     t.string   "cpu_avr15"
@@ -25,8 +25,8 @@ ActiveRecord::Schema.define(:version => 20100404194657) do
     t.string   "swap_free"
     t.integer  "process_all"
     t.integer  "process_running"
-    t.decimal  "server_load_time"
-    t.decimal  "web_load_time"
+    t.decimal  "server_load_time",  :precision => 12, :scale => 8
+    t.decimal  "web_load_time",     :precision => 12, :scale => 8
     t.text     "html_data"
     t.datetime "time_of_test"
     t.datetime "created_at"
@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(:version => 20100404194657) do
     t.integer  "web_test_id"
     t.string   "url"
     t.integer  "http_method",  :default => 0
-    t.text     "http_params",  :default => ""
+    t.text     "http_params"
     t.integer  "count_repeat", :default => 0
     t.integer  "sort",         :default => 0
     t.datetime "created_at"
@@ -56,8 +56,8 @@ ActiveRecord::Schema.define(:version => 20100404194657) do
 
   create_table "web_url_results", :force => true do |t|
     t.integer  "web_task_id"
-    t.integer  "count",         :default => 0
-    t.decimal  "web_load_time"
+    t.integer  "count",                                        :default => 0
+    t.decimal  "web_load_time", :precision => 12, :scale => 8
     t.text     "base_uri"
     t.text     "content_type"
     t.text     "content_data"

@@ -19,8 +19,8 @@ class CreateWebResults < ActiveRecord::Migration
       t.integer :process_all
       t.integer :process_running
       
-      t.decimal :server_load_time
-      t.decimal :web_load_time
+      t.decimal :server_load_time, :precision => 12, :scale => 8
+      t.decimal :web_load_time, :precision => 12, :scale => 8
       
       t.text :html_data
       

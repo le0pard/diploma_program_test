@@ -3,7 +3,7 @@ class CreateWebUrlResults < ActiveRecord::Migration
     create_table :web_url_results do |t|
       t.integer :web_task_id
       t.integer :count, :default => 0
-      t.decimal :web_load_time
+      t.decimal :web_load_time, :precision => 12, :scale => 8
       t.text :base_uri
       t.text :content_type
       t.text :content_data
