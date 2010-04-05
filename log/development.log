@@ -12525,3 +12525,744 @@ Processing StatisticController#process_data to js (for 127.0.0.1 at 2010-04-05 1
   [4;36;1mWebResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
   [4;35;1mWebResult Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `web_results`[0m
 Completed in 31ms (View: 0, DB: 2) | 200 OK [http://127.0.0.1/web_test/1/statistic_process_data?format=js]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 14:08:27) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#web_data to js (for 127.0.0.1 at 2010-04-05 14:08:27) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebTask Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+  [4;36;1mWebResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;35;1mWebResult Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `web_results`[0m
+  [4;36;1mWebUrlResult Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `web_url_results`[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 0) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.2ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 3) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.2ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 6) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.2ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 9) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 12) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 15) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 18) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 20) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 24) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 27) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 29) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 33) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 35) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 38) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.2ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 41) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 44) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 47) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 50) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 53) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 56) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 59) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 62) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 65) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 68) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 71) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.2ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 74) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 77) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 80) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 83) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 86) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.2ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 89) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 92) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 95) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 98) ORDER BY created_at[0m
+Completed in 68ms (View: 0, DB: 5) | 200 OK [http://127.0.0.1/web_test/1/statistic_web_data?format=js]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#cpu_data to js (for 127.0.0.1 at 2010-04-05 14:08:27) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.4ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+Completed in 31ms (View: 0, DB: 2) | 200 OK [http://127.0.0.1/web_test/1/statistic_cpu_data?format=js]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#memory_data to js (for 127.0.0.1 at 2010-04-05 14:08:28) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.3ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+Completed in 45ms (View: 0, DB: 3) | 200 OK [http://127.0.0.1/web_test/1/statistic_memory_data?format=js]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#swap_data to js (for 127.0.0.1 at 2010-04-05 14:08:28) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.3ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+Completed in 33ms (View: 0, DB: 2) | 200 OK [http://127.0.0.1/web_test/1/statistic_swap_data?format=js]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#process_data to js (for 127.0.0.1 at 2010-04-05 14:08:28) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.2ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+Completed in 31ms (View: 0, DB: 3) | 200 OK [http://127.0.0.1/web_test/1/statistic_process_data?format=js]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 14:12:34) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 52ms (View: 4, DB: 1) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#web_data to js (for 127.0.0.1 at 2010-04-05 14:12:34) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.1ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+  [4;35;1mWebUrlResult Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `web_url_results`[0m
+  [4;36;1mWebUrlResult Load (0.2ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 0) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 3) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.3ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 6) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 9) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 12) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 15) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 18) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 20) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 24) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 27) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 29) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 33) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 35) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.2ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 38) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 41) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 44) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 47) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.2ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 50) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 53) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 56) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 59) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 62) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 65) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 68) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.2ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 71) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 74) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 77) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.8ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 80) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 83) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 86) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 89) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 92) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 95) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 98) ORDER BY created_at[0m
+Completed in 69ms (View: 0, DB: 6) | 200 OK [http://127.0.0.1/web_test/1/statistic_web_data?format=js]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#cpu_data to js (for 127.0.0.1 at 2010-04-05 14:12:34) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebTask Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+  [4;36;1mWebResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;35;1mWebResult Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `web_results`[0m
+Completed in 31ms (View: 0, DB: 2) | 200 OK [http://127.0.0.1/web_test/1/statistic_cpu_data?format=js]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#memory_data to js (for 127.0.0.1 at 2010-04-05 14:12:35) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebTask Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+  [4;36;1mWebResult Load (0.2ms)[0m   [0;1mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;35;1mWebResult Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `web_results`[0m
+Completed in 88ms (View: 0, DB: 4) | 200 OK [http://127.0.0.1/web_test/1/statistic_memory_data?format=js]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#swap_data to js (for 127.0.0.1 at 2010-04-05 14:12:35) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebTask Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+  [4;36;1mWebResult Load (0.2ms)[0m   [0;1mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;35;1mWebResult Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `web_results`[0m
+Completed in 34ms (View: 0, DB: 3) | 200 OK [http://127.0.0.1/web_test/1/statistic_swap_data?format=js]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#process_data to js (for 127.0.0.1 at 2010-04-05 14:12:35) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebTask Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+  [4;36;1mWebResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;35;1mWebResult Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `web_results`[0m
+Completed in 34ms (View: 0, DB: 2) | 200 OK [http://127.0.0.1/web_test/1/statistic_process_data?format=js]
+  [4;36;1mSQL (3.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 14:13:13) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 8ms (View: 3, DB: 3) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#web_data to js (for 127.0.0.1 at 2010-04-05 14:13:14) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.2ms)[0m   [0;1mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebTask Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+  [4;36;1mWebResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;35;1mWebResult Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `web_results`[0m
+  [4;36;1mWebUrlResult Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `web_url_results`[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 0) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.3ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 3) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 6) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 9) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 12) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 15) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 18) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 20) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 24) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 27) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.2ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 29) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 33) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 35) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.3ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 38) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 41) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 44) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 47) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 50) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.5ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 53) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 56) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 59) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.2ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 62) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 65) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 68) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 71) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 74) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 77) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 80) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 83) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 86) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 89) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 92) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 95) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 98) ORDER BY created_at[0m
+Completed in 74ms (View: 0, DB: 10) | 200 OK [http://127.0.0.1/web_test/1/statistic_web_data?format=js]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#cpu_data to js (for 127.0.0.1 at 2010-04-05 14:13:14) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.1ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+Completed in 32ms (View: 0, DB: 2) | 200 OK [http://127.0.0.1/web_test/1/statistic_cpu_data?format=js]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#memory_data to js (for 127.0.0.1 at 2010-04-05 14:13:14) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.1ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+Completed in 80ms (View: 0, DB: 2) | 200 OK [http://127.0.0.1/web_test/1/statistic_memory_data?format=js]
+  [4;35;1mSQL (1.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#swap_data to js (for 127.0.0.1 at 2010-04-05 14:13:15) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.1ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+Completed in 33ms (View: 0, DB: 3) | 200 OK [http://127.0.0.1/web_test/1/statistic_swap_data?format=js]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#process_data to js (for 127.0.0.1 at 2010-04-05 14:13:15) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.1ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+Completed in 31ms (View: 0, DB: 4) | 200 OK [http://127.0.0.1/web_test/1/statistic_process_data?format=js]
+  [4;35;1mSQL (2.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 14:13:30) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 10ms (View: 4, DB: 3) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#web_data to js (for 127.0.0.1 at 2010-04-05 14:13:30) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTask Load (2.0ms)[0m   [0mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.1ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+  [4;35;1mWebUrlResult Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `web_url_results`[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 0) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 3) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 6) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 9) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 12) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 15) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 18) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 20) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.2ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 24) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 27) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 29) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 33) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 35) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 38) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 41) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 44) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 47) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 50) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 53) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.2ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 56) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 59) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 62) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 65) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (1.3ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 68) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 71) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 74) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 77) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 80) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 83) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.2ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 86) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 89) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 92) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 95) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 98) ORDER BY created_at[0m
+Completed in 71ms (View: 0, DB: 9) | 200 OK [http://127.0.0.1/web_test/1/statistic_web_data?format=js]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#cpu_data to js (for 127.0.0.1 at 2010-04-05 14:13:30) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebTask Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+  [4;36;1mWebResult Load (0.2ms)[0m   [0;1mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;35;1mWebResult Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `web_results`[0m
+Completed in 30ms (View: 0, DB: 2) | 200 OK [http://127.0.0.1/web_test/1/statistic_cpu_data?format=js]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#memory_data to js (for 127.0.0.1 at 2010-04-05 14:13:30) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.6ms)[0m   [0;1mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebTask Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+  [4;36;1mWebResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;35;1mWebResult Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `web_results`[0m
+Completed in 33ms (View: 0, DB: 4) | 200 OK [http://127.0.0.1/web_test/1/statistic_memory_data?format=js]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#swap_data to js (for 127.0.0.1 at 2010-04-05 14:13:31) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.3ms)[0m   [0;1mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebTask Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+  [4;36;1mWebResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;35;1mWebResult Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `web_results`[0m
+Completed in 59ms (View: 0, DB: 3) | 200 OK [http://127.0.0.1/web_test/1/statistic_swap_data?format=js]
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#process_data to js (for 127.0.0.1 at 2010-04-05 14:13:31) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebTask Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+  [4;36;1mWebResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;35;1mWebResult Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `web_results`[0m
+Completed in 32ms (View: 0, DB: 4) | 200 OK [http://127.0.0.1/web_test/1/statistic_process_data?format=js]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 14:13:31) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.3ms)
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#web_data to js (for 127.0.0.1 at 2010-04-05 14:13:32) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.3ms)[0m   [0;1mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebTask Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+  [4;36;1mWebResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;35;1mWebResult Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `web_results`[0m
+  [4;36;1mWebUrlResult Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `web_url_results`[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 0) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 3) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 6) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 9) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 12) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 15) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 18) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 20) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 24) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 27) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 29) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 33) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 35) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 38) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 41) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 44) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 47) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 50) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 53) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 56) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 59) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 62) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 65) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 68) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 71) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 74) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 77) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 80) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 83) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 86) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 89) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 92) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 95) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 98) ORDER BY created_at[0m
+Completed in 72ms (View: 0, DB: 7) | 200 OK [http://127.0.0.1/web_test/1/statistic_web_data?format=js]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#cpu_data to js (for 127.0.0.1 at 2010-04-05 14:13:32) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.1ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+Completed in 33ms (View: 0, DB: 2) | 200 OK [http://127.0.0.1/web_test/1/statistic_cpu_data?format=js]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#memory_data to js (for 127.0.0.1 at 2010-04-05 14:13:32) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.1ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+Completed in 30ms (View: 0, DB: 2) | 200 OK [http://127.0.0.1/web_test/1/statistic_memory_data?format=js]
+  [4;35;1mSQL (0.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#swap_data to js (for 127.0.0.1 at 2010-04-05 14:13:33) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.1ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+Completed in 36ms (View: 0, DB: 3) | 200 OK [http://127.0.0.1/web_test/1/statistic_swap_data?format=js]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#process_data to js (for 127.0.0.1 at 2010-04-05 14:13:33) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.6ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+Completed in 31ms (View: 1, DB: 2) | 200 OK [http://127.0.0.1/web_test/1/statistic_process_data?format=js]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 14:15:39) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#web_data to js (for 127.0.0.1 at 2010-04-05 14:15:40) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTask Load (0.4ms)[0m   [0mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.1ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+  [4;35;1mWebUrlResult Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `web_url_results`[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 0) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 3) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 6) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 9) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 12) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 15) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 18) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 20) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 24) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 27) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 29) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 33) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 35) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 38) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 41) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.2ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 44) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 47) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 50) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 53) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 56) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 59) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 62) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 65) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 68) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.2ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 71) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 74) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 77) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 80) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.4ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 83) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 86) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 89) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 92) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 95) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 98) ORDER BY created_at[0m
+Completed in 70ms (View: 0, DB: 5) | 200 OK [http://127.0.0.1/web_test/1/statistic_web_data?format=js]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#cpu_data to js (for 127.0.0.1 at 2010-04-05 14:15:40) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebTask Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+  [4;36;1mWebResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;35;1mWebResult Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `web_results`[0m
+Completed in 32ms (View: 0, DB: 2) | 200 OK [http://127.0.0.1/web_test/1/statistic_cpu_data?format=js]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#memory_data to js (for 127.0.0.1 at 2010-04-05 14:15:40) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+  [4;36;1mWebResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;35;1mWebResult Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `web_results`[0m
+Completed in 30ms (View: 0, DB: 2) | 200 OK [http://127.0.0.1/web_test/1/statistic_memory_data?format=js]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#swap_data to js (for 127.0.0.1 at 2010-04-05 14:15:40) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+  [4;36;1mWebResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;35;1mWebResult Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `web_results`[0m
+Completed in 83ms (View: 0, DB: 2) | 200 OK [http://127.0.0.1/web_test/1/statistic_swap_data?format=js]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#process_data to js (for 127.0.0.1 at 2010-04-05 14:15:41) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTask Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tasks` ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebTask Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+  [4;36;1mWebResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;35;1mWebResult Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `web_results`[0m
+Completed in 47ms (View: 0, DB: 2) | 200 OK [http://127.0.0.1/web_test/1/statistic_process_data?format=js]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 14:18:10) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#web_data to js (for 127.0.0.1 at 2010-04-05 14:18:10) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTest Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `web_tests`[0m
+  [4;35;1mWebTest Load (0.1ms)[0m   [0mSELECT * FROM `web_tests` WHERE (`web_tests`.`id` = 1) ORDER BY created_at DESC[0m
+  [4;36;1mWebTask Load (0.5ms)[0m   [0;1mSELECT * FROM `web_tasks` WHERE (`web_tasks`.web_test_id = 1) ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebTask Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+  [4;36;1mWebResult Load (0.2ms)[0m   [0;1mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;35;1mWebResult Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `web_results`[0m
+  [4;36;1mWebUrlResult Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `web_url_results`[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 0) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 3) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 6) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 9) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 12) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.6ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 15) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 18) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.2ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 20) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 24) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 27) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 29) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 33) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 35) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 38) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 41) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 44) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 47) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 50) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 53) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.2ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 56) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 59) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 62) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 65) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 68) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 71) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 74) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.2ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 77) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.3ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 80) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 83) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 86) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 89) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 92) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 95) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.3ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 98) ORDER BY created_at[0m
+Completed in 148ms (View: 0, DB: 7) | 200 OK [http://127.0.0.1/web_test/1/statistic_web_data?format=js]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#cpu_data to js (for 127.0.0.1 at 2010-04-05 14:18:10) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTest Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `web_tests`[0m
+  [4;36;1mWebTest Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tests` WHERE (`web_tests`.`id` = 1) ORDER BY created_at DESC[0m
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` WHERE (`web_tasks`.web_test_id = 1) ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.1ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+Completed in 40ms (View: 0, DB: 5) | 200 OK [http://127.0.0.1/web_test/1/statistic_cpu_data?format=js]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#memory_data to js (for 127.0.0.1 at 2010-04-05 14:18:11) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTest Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `web_tests`[0m
+  [4;36;1mWebTest Load (1.5ms)[0m   [0;1mSELECT * FROM `web_tests` WHERE (`web_tests`.`id` = 1) ORDER BY created_at DESC[0m
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` WHERE (`web_tasks`.web_test_id = 1) ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.1ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+Completed in 39ms (View: 0, DB: 4) | 200 OK [http://127.0.0.1/web_test/1/statistic_memory_data?format=js]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#swap_data to js (for 127.0.0.1 at 2010-04-05 14:18:11) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTest Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `web_tests`[0m
+  [4;36;1mWebTest Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tests` WHERE (`web_tests`.`id` = 1) ORDER BY created_at DESC[0m
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` WHERE (`web_tasks`.web_test_id = 1) ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.1ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+Completed in 42ms (View: 0, DB: 3) | 200 OK [http://127.0.0.1/web_test/1/statistic_swap_data?format=js]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#process_data to js (for 127.0.0.1 at 2010-04-05 14:18:11) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTest Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `web_tests`[0m
+  [4;36;1mWebTest Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tests` WHERE (`web_tests`.`id` = 1) ORDER BY created_at DESC[0m
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` WHERE (`web_tasks`.web_test_id = 1) ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.1ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+Completed in 37ms (View: 0, DB: 3) | 200 OK [http://127.0.0.1/web_test/1/statistic_process_data?format=js]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebTestController#index (for 127.0.0.1 at 2010-04-05 14:19:00) [GET]
+  [4;35;1mWebTest Load (0.3ms)[0m   [0mSELECT * FROM `web_tests` ORDER BY name, created_at DESC LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering web_test/index
+  [4;36;1mWebTest Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `web_tests`[0m
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.1ms)
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebTestController#new (for 127.0.0.1 at 2010-04-05 14:19:02) [GET]
+  [4;35;1mWebTest Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `web_tests`[0m
+Rendering template within layouts/application
+Rendering web_test/new
+Rendered web_test/_form (1.0ms)
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.1ms)
+Completed in 64ms (View: 15, DB: 1) | 200 OK [http://127.0.0.1/web_test/new]

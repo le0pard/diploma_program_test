@@ -1,11 +1,11 @@
 class StatisticController < ApplicationController
   
   def index
-    @cpu_graph = open_flash_chart_object(1000, 400, web_test_statistic_cpu_data_path(:web_test_id => 1, :format => :js))
-    @memory_graph = open_flash_chart_object(1000, 400, web_test_statistic_memory_data_path(:web_test_id => 1, :format => :js))
-    @swap_graph = open_flash_chart_object(1000, 400, web_test_statistic_swap_data_path(:web_test_id => 1, :format => :js))
-    @process_graph = open_flash_chart_object(1000, 400, web_test_statistic_process_data_path(:web_test_id => 1, :format => :js))
-    @web_graph = open_flash_chart_object(1000, 400, web_test_statistic_web_data_path(:web_test_id => 1, :format => :js))
+    @cpu_graph = open_flash_chart_object(1000, 400, web_test_statistic_cpu_data_path(:web_test_id => params[:web_test_id], :format => :js))
+    @memory_graph = open_flash_chart_object(1000, 400, web_test_statistic_memory_data_path(:web_test_id => params[:web_test_id], :format => :js))
+    @swap_graph = open_flash_chart_object(1000, 400, web_test_statistic_swap_data_path(:web_test_id => params[:web_test_id], :format => :js))
+    @process_graph = open_flash_chart_object(1000, 400, web_test_statistic_process_data_path(:web_test_id => params[:web_test_id], :format => :js))
+    @web_graph = open_flash_chart_object(1000, 400, web_test_statistic_web_data_path(:web_test_id => params[:web_test_id], :format => :js))
   end
   
   
@@ -24,7 +24,7 @@ class StatisticController < ApplicationController
         
         data_x = []
 
-        WebTask.first.web_results.each do |web_result|
+        WebTest.find(params[:web_test_id]).web_tasks.first.web_results.each do |web_result|
           data1 << web_result.mem_used.to_f
           data2 << web_result.mem_free.to_f
           data3 << web_result.mem_total.to_f
@@ -107,7 +107,7 @@ class StatisticController < ApplicationController
         
         data_x = []
 
-        WebTask.first.web_results.each do |web_result|
+        WebTest.find(params[:web_test_id]).web_tasks.first.web_results.each do |web_result|
           data1 << web_result.cpu_avr1.to_f
           data2 << web_result.cpu_avr5.to_f
           data3 << web_result.cpu_avr15.to_f
@@ -192,7 +192,7 @@ class StatisticController < ApplicationController
         
         data_x = []
 
-        WebTask.first.web_results.each do |web_result|
+        WebTest.find(params[:web_test_id]).web_tasks.first.web_results.each do |web_result|
           data1 << web_result.swap_used.to_f
           data2 << web_result.swap_free.to_f
           data3 << web_result.swap_total.to_f
@@ -275,7 +275,7 @@ class StatisticController < ApplicationController
         
         data_x = []
 
-        WebTask.first.web_results.each do |web_result|
+        WebTest.find(params[:web_test_id]).web_tasks.first.web_results.each do |web_result|
           data1 << web_result.process_running
           data2 << web_result.process_all - web_result.process_running
           data3 << web_result.process_all
@@ -359,15 +359,15 @@ class StatisticController < ApplicationController
         
         data_x = []
 
-        WebTask.first.web_results.each do |web_result|
-          data1 << web_result.web_load_time.to_f * 1000.0
-          data2 << web_result.server_load_time.to_f * 1000.0
-          web_load_time = web_result.web_url_result ? web_result.web_url_result.web_load_time.to_f * 1000.0 : web_result.web_load_time.to_f * 1000.0
-          data3 << web_load_time
+        WebTest.find(params[:web_test_id]).web_tasks.first.web_results.each do |web_result|
+          web_load_time = web_result.web_load_time.to_f * 1000.0
+          all_load_time = web_result.web_url_result ? web_result.web_url_result.web_load_time.to_f * 1000.0 : web_result.web_load_time.to_f * 1000.0
+          server_busy_time = all_load_time - web_load_time 
+          data1 << web_load_time
+          data2 << server_busy_time
+          data3 << all_load_time
 
-          max_value = web_result.web_load_time.to_f * 1000.0 if max_value < web_result.web_load_time.to_f * 1000.0
-          max_value = web_result.server_load_time.to_f * 1000.0 if max_value < web_result.server_load_time.to_f * 1000.0
-          max_value = web_load_time if max_value * 1000.0 < web_load_time * 1000.0
+          max_value = all_load_time if max_value < all_load_time
           
           data_x << web_result.time_of_test
         end
@@ -380,14 +380,14 @@ class StatisticController < ApplicationController
         line.values = data1
         
         line2 = Line.new
-        line2.text = "Server busy time"
+        line2.text = "Server time"
         line2.width = 2
         line2.colour = '#DB1750'
         line2.dot_size = 5
         line2.values = data2
         
         line3 = Line.new
-        line3.text = "Web page load"
+        line3.text = "All time"
         line3.width = 2
         line3.colour = '#225900'
         line3.dot_size = 5
