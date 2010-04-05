@@ -22,7 +22,8 @@
 			<% @web_test.web_tasks.each do |web_task|%>
 				<option value="<%=web_task.id%>" <% if @web_task.id == web_task.id%> selected="selected" <% end %>><%=web_task.name%></option>
 			<% end %>
-		</select>
+		</select> 
+		<%=link_to "Compare", compare_task_path(:web_task_id1 => @web_task.id)%>
 		<br />
 		<ul>
 			<li><strong>Name:</strong> <%=h @web_task.name%></li>

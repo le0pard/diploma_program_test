@@ -9,7 +9,7 @@ class StatisticComparisonController < ApplicationController
       @compare_methods = compare_methods
       @compare_method_selected = params[:compare_method] ? params[:compare_method] : compare_methods[0]
       
-      @graph = open_flash_chart_object(700, 400, compare_tasks_data_path(:web_task_id1 => @web_task1.id, :web_task_id2 => @web_task2.id, :compare_method => @compare_method_selected))
+      @graph, @graph_div = open_flash_chart_object_and_div_name(700, 400, compare_tasks_data_path(:web_task_id1 => @web_task1.id, :web_task_id2 => @web_task2.id, :compare_method => @compare_method_selected))
     elsif params[:web_task_id1]
       @web_task1 = WebTask.find(params[:web_task_id1]) rescue nil
       return (redirect_to root_path) if @web_task1.nil?
