@@ -1,3 +1,4 @@
+<div style="float:left">
 <div>
 <%= @web_graph %>
 </div>
@@ -13,3 +14,34 @@
 <div>
 <%= @process_graph %>
 </div>
+</div>
+
+<div style="float:left; margin:10px">
+	<div>
+		<select id="web_task_selected">
+			<% @web_test.web_tasks.each do |web_task|%>
+				<option value="<%=web_task.id%>" <% if @web_task.id == web_task.id%> selected="selected" <% end %>><%=web_task.name%></option>
+			<% end %>
+		</select>
+		<br />
+		<ul>
+			<li><strong>Name:</strong> <%=h @web_task.name%></li>
+			<li><strong>Url:</strong> <%=h @web_task.url%></li>
+			<li><strong>Method:</strong> <%=h @web_task.http_method_name%></li>
+			<li><strong>Params:</strong> <%=h @web_task.http_params%></li>
+			<li><strong>Count repeated:</strong> <%=h @web_task.count_repeat%></li>
+		</ul>
+	</div>
+	
+	<div>
+		<%=link_to "Back", web_test_path(:id => @web_test.id)%>
+	</div>
+</div>
+
+<script type="text/javascript">
+	Event.observe(window, 'load', function(){
+		$('web_task_selected').observe('change', function(){
+			location.href = "/web_test/<%=@web_test.id %>/statistic?web_task_id=" + $F('web_task_selected');
+		});
+	});	
+</script>

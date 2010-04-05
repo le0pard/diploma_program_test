@@ -1,11 +1,16 @@
 class StatisticController < ApplicationController
   
   def index
-    @cpu_graph = open_flash_chart_object(1000, 400, web_test_statistic_cpu_data_path(:web_test_id => params[:web_test_id], :format => :js))
-    @memory_graph = open_flash_chart_object(1000, 400, web_test_statistic_memory_data_path(:web_test_id => params[:web_test_id], :format => :js))
-    @swap_graph = open_flash_chart_object(1000, 400, web_test_statistic_swap_data_path(:web_test_id => params[:web_test_id], :format => :js))
-    @process_graph = open_flash_chart_object(1000, 400, web_test_statistic_process_data_path(:web_test_id => params[:web_test_id], :format => :js))
-    @web_graph = open_flash_chart_object(1000, 400, web_test_statistic_web_data_path(:web_test_id => params[:web_test_id], :format => :js))
+    @web_test = WebTest.find(params[:web_test_id]) rescue nil
+    return (redirect_to root_path) if @web_test.nil?
+    
+    @web_task = params[:web_task_id] ? @web_test.web_tasks.find(params[:web_task_id]) : @web_test.web_tasks.first
+    
+    @cpu_graph = open_flash_chart_object(700, 400, web_test_statistic_cpu_data_path(:web_test_id => @web_test.id, :web_task_id => @web_task.id, :format => :js))
+    @memory_graph = open_flash_chart_object(700, 400, web_test_statistic_memory_data_path(:web_test_id => @web_test.id, :web_task_id => @web_task.id, :format => :js))
+    @swap_graph = open_flash_chart_object(700, 400, web_test_statistic_swap_data_path(:web_test_id => @web_test.id, :web_task_id => @web_task.id, :format => :js))
+    @process_graph = open_flash_chart_object(700, 400, web_test_statistic_process_data_path(:web_test_id => @web_test.id, :web_task_id => @web_task.id, :format => :js))
+    @web_graph = open_flash_chart_object(700, 400, web_test_statistic_web_data_path(:web_test_id => @web_test.id, :web_task_id => @web_task.id, :format => :js))
   end
   
   
@@ -24,7 +29,7 @@ class StatisticController < ApplicationController
         
         data_x = []
 
-        WebTest.find(params[:web_test_id]).web_tasks.first.web_results.each do |web_result|
+        WebTest.find(params[:web_test_id]).web_tasks.find(params[:web_task_id]).web_results.each do |web_result|
           data1 << web_result.mem_used.to_f
           data2 << web_result.mem_free.to_f
           data3 << web_result.mem_total.to_f
@@ -107,7 +112,7 @@ class StatisticController < ApplicationController
         
         data_x = []
 
-        WebTest.find(params[:web_test_id]).web_tasks.first.web_results.each do |web_result|
+        WebTest.find(params[:web_test_id]).web_tasks.find(params[:web_task_id]).web_results.each do |web_result|
           data1 << web_result.cpu_avr1.to_f
           data2 << web_result.cpu_avr5.to_f
           data3 << web_result.cpu_avr15.to_f
@@ -192,7 +197,7 @@ class StatisticController < ApplicationController
         
         data_x = []
 
-        WebTest.find(params[:web_test_id]).web_tasks.first.web_results.each do |web_result|
+        WebTest.find(params[:web_test_id]).web_tasks.find(params[:web_task_id]).web_results.each do |web_result|
           data1 << web_result.swap_used.to_f
           data2 << web_result.swap_free.to_f
           data3 << web_result.swap_total.to_f
@@ -275,7 +280,7 @@ class StatisticController < ApplicationController
         
         data_x = []
 
-        WebTest.find(params[:web_test_id]).web_tasks.first.web_results.each do |web_result|
+        WebTest.find(params[:web_test_id]).web_tasks.find(params[:web_task_id]).web_results.each do |web_result|
           data1 << web_result.process_running
           data2 << web_result.process_all - web_result.process_running
           data3 << web_result.process_all
@@ -359,7 +364,7 @@ class StatisticController < ApplicationController
         
         data_x = []
 
-        WebTest.find(params[:web_test_id]).web_tasks.first.web_results.each do |web_result|
+        WebTest.find(params[:web_test_id]).web_tasks.find(params[:web_task_id]).web_results.each do |web_result|
           web_load_time = web_result.web_load_time.to_f * 1000.0
           all_load_time = web_result.web_url_result ? web_result.web_url_result.web_load_time.to_f * 1000.0 : web_result.web_load_time.to_f * 1000.0
           server_busy_time = all_load_time - web_load_time 
