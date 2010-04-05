@@ -13266,3 +13266,201 @@ Rendered web_test/_form (1.0ms)
 Rendered _shared/_menu (0.1ms)
 Rendered _shared/_messages (0.1ms)
 Completed in 64ms (View: 15, DB: 1) | 200 OK [http://127.0.0.1/web_test/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebTestController#index (for 127.0.0.1 at 2010-04-05 14:19:41) [GET]
+  [4;36;1mWebTest Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tests` ORDER BY name, created_at DESC LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering web_test/index
+  [4;35;1mWebTest Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `web_tests`[0m
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.1ms)
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://127.0.0.1/web_test]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebTestController#show (for 127.0.0.1 at 2010-04-05 14:19:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mWebTest Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `web_tests`[0m
+  [4;35;1mWebTest Load (0.1ms)[0m   [0mSELECT * FROM `web_tests` WHERE (`web_tests`.`id` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering web_test/show
+  [4;36;1mWebTask Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tasks` WHERE (`web_tasks`.web_test_id = 1) ORDER BY sort[0m
+  [4;35;1mWebTask Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.1ms)
+Completed in 29ms (View: 22, DB: 2) | 200 OK [http://127.0.0.1/web_test/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebTestController#show (for 127.0.0.1 at 2010-04-05 14:20:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mWebTest Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `web_tests`[0m
+  [4;35;1mWebTest Load (7.3ms)[0m   [0mSELECT * FROM `web_tests` WHERE (`web_tests`.`id` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering web_test/show
+  [4;36;1mWebTask Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tasks` WHERE (`web_tasks`.web_test_id = 1) ORDER BY sort[0m
+  [4;35;1mWebTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.1ms)
+Completed in 32ms (View: 17, DB: 9) | 200 OK [http://127.0.0.1/web_test/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebTestController#show (for 127.0.0.1 at 2010-04-05 14:20:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mWebTest Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `web_tests`[0m
+  [4;35;1mWebTest Load (0.1ms)[0m   [0mSELECT * FROM `web_tests` WHERE (`web_tests`.`id` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering web_test/show
+  [4;36;1mWebTask Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tasks` WHERE (`web_tasks`.web_test_id = 1) ORDER BY sort[0m
+  [4;35;1mWebTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.1ms)
+Completed in 70ms (View: 63, DB: 2) | 200 OK [http://127.0.0.1/web_test/1]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebTestController#show (for 127.0.0.1 at 2010-04-05 14:21:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mWebTest Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `web_tests`[0m
+  [4;35;1mWebTest Load (0.1ms)[0m   [0mSELECT * FROM `web_tests` WHERE (`web_tests`.`id` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering web_test/show
+  [4;36;1mWebTask Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tasks` WHERE (`web_tasks`.web_test_id = 1) ORDER BY sort[0m
+  [4;35;1mWebTask Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.1ms)
+Completed in 31ms (View: 23, DB: 2) | 200 OK [http://127.0.0.1/web_test/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (7.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebTestController#show (for 127.0.0.1 at 2010-04-05 14:21:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mWebTest Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `web_tests`[0m
+  [4;35;1mWebTest Load (0.1ms)[0m   [0mSELECT * FROM `web_tests` WHERE (`web_tests`.`id` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering web_test/show
+  [4;36;1mWebTask Load (0.2ms)[0m   [0;1mSELECT * FROM `web_tasks` WHERE (`web_tasks`.web_test_id = 1) ORDER BY sort[0m
+  [4;35;1mWebTask Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.1ms)
+Completed in 26ms (View: 18, DB: 9) | 200 OK [http://127.0.0.1/web_test/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#index (for 127.0.0.1 at 2010-04-05 14:21:28) [GET]
+  Parameters: {"web_test_id"=>"1"}
+Rendering template within layouts/application
+Rendering statistic/index
+Rendered _shared/_menu (0.1ms)
+Rendered _shared/_messages (0.4ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/web_test/1/statistic]
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#web_data to js (for 127.0.0.1 at 2010-04-05 14:21:29) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;36;1mWebTest Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `web_tests`[0m
+  [4;35;1mWebTest Load (0.1ms)[0m   [0mSELECT * FROM `web_tests` WHERE (`web_tests`.`id` = 1) ORDER BY created_at DESC[0m
+  [4;36;1mWebTask Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tasks` WHERE (`web_tasks`.web_test_id = 1) ORDER BY sort LIMIT 1[0m
+  [4;35;1mWebTask Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `web_tasks`[0m
+  [4;36;1mWebResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;35;1mWebResult Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `web_results`[0m
+  [4;36;1mWebUrlResult Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `web_url_results`[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 0) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 3) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 6) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 9) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 12) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 15) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 18) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 20) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 24) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 27) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 29) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 33) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 35) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 38) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 41) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 44) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 47) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 50) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 53) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 56) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 59) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 62) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 65) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 68) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.1ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 71) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 74) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 77) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 80) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 83) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.2ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 86) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 89) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.1ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 92) ORDER BY created_at[0m
+  [4;35;1mWebUrlResult Load (0.0ms)[0m   [0mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 95) ORDER BY created_at[0m
+  [4;36;1mWebUrlResult Load (0.0ms)[0m   [0;1mSELECT * FROM `web_url_results` WHERE (`web_url_results`.`id` = 98) ORDER BY created_at[0m
+Completed in 63ms (View: 0, DB: 6) | 200 OK [http://127.0.0.1/web_test/1/statistic_web_data?format=js]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#cpu_data to js (for 127.0.0.1 at 2010-04-05 14:21:29) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTest Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `web_tests`[0m
+  [4;36;1mWebTest Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tests` WHERE (`web_tests`.`id` = 1) ORDER BY created_at DESC[0m
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` WHERE (`web_tasks`.web_test_id = 1) ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.1ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+Completed in 50ms (View: 0, DB: 4) | 200 OK [http://127.0.0.1/web_test/1/statistic_cpu_data?format=js]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#memory_data to js (for 127.0.0.1 at 2010-04-05 14:21:29) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTest Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `web_tests`[0m
+  [4;36;1mWebTest Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tests` WHERE (`web_tests`.`id` = 1) ORDER BY created_at DESC[0m
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` WHERE (`web_tasks`.web_test_id = 1) ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.1ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+Completed in 35ms (View: 0, DB: 3) | 200 OK [http://127.0.0.1/web_test/1/statistic_memory_data?format=js]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#swap_data to js (for 127.0.0.1 at 2010-04-05 14:21:29) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTest Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `web_tests`[0m
+  [4;36;1mWebTest Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tests` WHERE (`web_tests`.`id` = 1) ORDER BY created_at DESC[0m
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` WHERE (`web_tasks`.web_test_id = 1) ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.1ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+Completed in 39ms (View: 0, DB: 3) | 200 OK [http://127.0.0.1/web_test/1/statistic_swap_data?format=js]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatisticController#process_data to js (for 127.0.0.1 at 2010-04-05 14:21:29) [GET]
+  Parameters: {"web_test_id"=>"1"}
+  [4;35;1mWebTest Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `web_tests`[0m
+  [4;36;1mWebTest Load (0.1ms)[0m   [0;1mSELECT * FROM `web_tests` WHERE (`web_tests`.`id` = 1) ORDER BY created_at DESC[0m
+  [4;35;1mWebTask Load (0.1ms)[0m   [0mSELECT * FROM `web_tasks` WHERE (`web_tasks`.web_test_id = 1) ORDER BY sort LIMIT 1[0m
+  [4;36;1mWebTask Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `web_tasks`[0m
+  [4;35;1mWebResult Load (0.1ms)[0m   [0mSELECT * FROM `web_results` WHERE (`web_results`.web_task_id = 2) [0m
+  [4;36;1mWebResult Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `web_results`[0m
+Completed in 38ms (View: 0, DB: 3) | 200 OK [http://127.0.0.1/web_test/1/statistic_process_data?format=js]

@@ -10,6 +10,7 @@ Web test: <strong><%=h @web_test.name %></strong>
 	<% end %>
 <% else %>
 	<% if @web_test.resulted_at %>
+		<%=link_to "Show results", web_test_statistic_path(:web_test_id => @web_test.id)%>
 	<% else %>
 		Start testing... waiting...
 	<% end %>
