@@ -21,7 +21,7 @@ class WebTask < ActiveRecord::Base
   default_scope :order => 'sort'
   
   def self.comparison(web_task)
-    WebTask.all(:joins => :web_test, :conditions => ["web_tasks.count_repeat = ? AND web_tasks.id != ? AND web_tests.launched = ? AND resulted_at IS NOT NULL", web_task.count_repeat, web_task.id, true])
+    WebTask.all(:joins => :web_test, :conditions => ["web_tasks.id != ? AND web_tests.launched = ? AND resulted_at IS NOT NULL", web_task.id, true])
   end
   
   def self.done_all

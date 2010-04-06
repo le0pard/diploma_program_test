@@ -12,7 +12,7 @@
 		<label for="web_task_id2">Select second task for comparison:</label>
 		<select id="web_task_id2">
 			<% @alternatives_selector.each do |web_task| %>
-				<option value="<%=web_task.id %>"><%=h web_task.name %></option>
+				<option value="<%=web_task.id %>" <% if @web_task2 && @web_task2.id == web_task.id%> selected="selected" <% end %>><%=h web_task.name %></option>
 			<% end %>
 		</select>
 	</div>
