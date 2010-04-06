@@ -1,5 +1,7 @@
 require "xmlrpc/client"
 require "open-uri"
+require "net/http"
+require "net/https"
 
 def get_time_investigate(url, params)
   result = nil
@@ -11,6 +13,23 @@ def get_time_investigate(url, params)
      result = (end_time - start_time)
  end
  return result
+end
+
+def post_time_investigate(url, params)
+  result = nil
+  uri = URI.parse(url.to_s)
+  http = Net::HTTP.new(uri.host, uri.port)
+  http.use_ssl = true if uri.scheme == "https"
+  path = uri.request_uri
+  headers = {
+    'Referer' => url,
+    'Content-Type' => 'application/x-www-form-urlencoded'
+  }
+  start_time = Time.now.utc
+  resp, data = http.post(path, params, headers)
+  end_time = Time.now.utc
+  result = (end_time - start_time)
+  return result
 end
 
 def get_information_by_server(server)

@@ -1,7 +1,7 @@
 class WebTestController < ApplicationController
   
   def index
-    @web_tests = WebTest.paginate :per_page => 20, :page => params[:page], :order => 'name'
+    @web_tests = WebTest.paginate :per_page => 20, :page => params[:page]
   end
   
   def new

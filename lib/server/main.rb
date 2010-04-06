@@ -10,7 +10,7 @@ require "json"
 
 puts "log: starting connection"
 
-s = XMLRPC::Server.new(20100)
+s = XMLRPC::Server.new(20100, "92.249.81.1")
 
 class SystemHandler
   def cpu_info
