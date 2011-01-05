@@ -3,16 +3,36 @@
 <%= @web_graph %>
 </div>
 <div>
+	<input id="save_web_graph" type="button" value="Save image" />
+	<input id="chng_web_graph" type="button" value="Change graph to image" />
+</div>
+<div>
 <%= @cpu_graph %>
+</div>
+<div>
+	<input id="save_cpu_graph" type="button" value="Save image" />
+	<input id="chng_cpu_graph" type="button" value="Change graph to image" />
 </div>
 <div>
 <%= @memory_graph %>
 </div>
 <div>
+	<input id="save_memory_graph" type="button" value="Save image" />
+	<input id="chng_memory_graph" type="button" value="Change graph to image" />
+</div>
+<div>
 <%= @swap_graph %>
 </div>
 <div>
+	<input id="save_swap_graph" type="button" value="Save image" />
+	<input id="chng_swap_graph" type="button" value="Change graph to image" />
+</div>
+<div>
 <%= @process_graph %>
+</div>
+<div>
+	<input id="save_process_graph" type="button" value="Save image" />
+	<input id="chng_process_graph" type="button" value="Change graph to image" />
 </div>
 </div>
 
@@ -43,6 +63,86 @@
 	Event.observe(window, 'load', function(){
 		$('web_task_selected').observe('change', function(){
 			location.href = "/web_test/<%=@web_test.id %>/statistic?web_task_id=" + $F('web_task_selected');
+		});
+	});	
+</script>
+
+<script type="text/javascript">
+	Event.observe(window, 'load', function(){
+ 
+		OFC = {};
+ 
+		OFC.prototype = {
+		    name: "Prototype",
+		    version: function(src) { return $(src).get_version() },
+		    rasterize: function (src, dst) { $(dst).replace(new Element("img", {src: Control.OFC.image(src)})) },
+		    image: function(src) {return "data:image/png;base64," + $(src).get_img_binary()},
+		    popup: function(src) {
+		        var img_win = window.open('', 'Charts: Export as Image')
+		        with(img_win.document) {
+		            write("<html><head><title>Charts: Export as Image<\/title><\/head><body><img src='" + Control.OFC.image(src) + "' /><\/body><\/html>") }
+		     }
+		}
+		
+		OFC.none = {
+		    name: "pure DOM",
+		    version: function(src) { return document.getElementById(src).get_version() },
+		    rasterize: function (src, dst) {
+		      var _dst = document.getElementById(dst)
+		      e = document.createElement("div")
+		      e.innerHTML = Control.OFC.image(src)
+		      _dst.parentNode.replaceChild(e, _dst);
+		    },
+		    image: function(src) {return "<img src='data:image/png;base64," + document.getElementById(src).get_img_binary() + "' />"},
+		    popup: function(src) {
+		        var img_win = window.open('', 'Charts: Export as Image')
+		        with(img_win.document) {
+		            write("<html><head><title>Charts: Export as Image<\/title><\/head><body>" + Control.OFC.image(src) + "<\/body><\/html>") }
+		     }
+		}
+
+
+		if (typeof(Control == "undefined")) {var Control = {OFC: OFC.prototype}}
+		function save_image() { Control.OFC.popup('<%=@graph_div%>') }
+		$('save_web_graph').observe('click', function(){
+			Control.OFC.popup('<%=@web_graph_div%>');
+			return false;
+		});
+		$('chng_web_graph').observe('click', function(){
+			Control.OFC.rasterize('<%=@web_graph_div%>', '<%=@web_graph_div%>');
+			return false;
+		});
+		$('save_cpu_graph').observe('click', function(){
+			Control.OFC.popup('<%=@cpu_graph_div%>');
+			return false;
+		});
+		$('chng_cpu_graph').observe('click', function(){
+			Control.OFC.rasterize('<%=@cpu_graph_div%>', '<%=@cpu_graph_div%>');
+			return false;
+		});
+		$('save_memory_graph').observe('click', function(){
+			Control.OFC.popup('<%=@memory_graph_div%>');
+			return false;
+		});
+		$('chng_memory_graph').observe('click', function(){
+			Control.OFC.rasterize('<%=@memory_graph_div%>', '<%=@memory_graph_div%>');
+			return false;
+		});
+		$('save_swap_graph').observe('click', function(){
+			Control.OFC.popup('<%=@swap_graph_div%>');
+			return false;
+		});
+		$('chng_swap_graph').observe('click', function(){
+			Control.OFC.rasterize('<%=@swap_graph_div%>', '<%=@swap_graph_div%>');
+			return false;
+		});
+		$('save_process_graph').observe('click', function(){
+			Control.OFC.popup('<%=@process_graph_div%>');
+			return false;
+		});
+		$('chng_process_graph').observe('click', function(){
+			Control.OFC.rasterize('<%=@process_graph_div%>', '<%=@process_graph_div%>');
+			return false;
 		});
 	});	
 </script>

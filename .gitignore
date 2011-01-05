@@ -1,0 +1,10 @@
+.project
+.git
+.externalToolBuilders
+log/*.log
+log/*.pid
+cache/*
+config/databases.yml
+db/*.sqlite3
+.tmp_*
+.loadpath

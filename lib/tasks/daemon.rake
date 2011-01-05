@@ -42,7 +42,8 @@ namespace :daemon do
           
           server_thread = Thread.new do
             # Make an object to represent the XML-RPC server.
-            server = XMLRPC::Client.new( "92.249.81.1", '/', 20100)
+            #server = XMLRPC::Client.new( "92.249.81.1", '/', 20100)
+            server = XMLRPC::Client.new( "127.0.0.1", '/', 20100)
             while client_thread.alive? do
               prms = get_information_by_server(server)
               if prms

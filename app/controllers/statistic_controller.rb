@@ -6,11 +6,11 @@ class StatisticController < ApplicationController
     
     @web_task = params[:web_task_id] ? @web_test.web_tasks.find(params[:web_task_id]) : @web_test.web_tasks.first
     
-    @cpu_graph = open_flash_chart_object(700, 400, web_test_statistic_cpu_data_path(:web_test_id => @web_test.id, :web_task_id => @web_task.id, :format => :js))
-    @memory_graph = open_flash_chart_object(700, 400, web_test_statistic_memory_data_path(:web_test_id => @web_test.id, :web_task_id => @web_task.id, :format => :js))
-    @swap_graph = open_flash_chart_object(700, 400, web_test_statistic_swap_data_path(:web_test_id => @web_test.id, :web_task_id => @web_task.id, :format => :js))
-    @process_graph = open_flash_chart_object(700, 400, web_test_statistic_process_data_path(:web_test_id => @web_test.id, :web_task_id => @web_task.id, :format => :js))
-    @web_graph = open_flash_chart_object(700, 400, web_test_statistic_web_data_path(:web_test_id => @web_test.id, :web_task_id => @web_task.id, :format => :js))
+    @cpu_graph, @cpu_graph_div = open_flash_chart_object_and_div_name(700, 400, web_test_statistic_cpu_data_path(:web_test_id => @web_test.id, :web_task_id => @web_task.id, :format => :js))
+    @memory_graph, @memory_graph_div = open_flash_chart_object_and_div_name(700, 400, web_test_statistic_memory_data_path(:web_test_id => @web_test.id, :web_task_id => @web_task.id, :format => :js))
+    @swap_graph, @swap_graph_div = open_flash_chart_object_and_div_name(700, 400, web_test_statistic_swap_data_path(:web_test_id => @web_test.id, :web_task_id => @web_task.id, :format => :js))
+    @process_graph, @process_graph_div = open_flash_chart_object_and_div_name(700, 400, web_test_statistic_process_data_path(:web_test_id => @web_test.id, :web_task_id => @web_task.id, :format => :js))
+    @web_graph, @web_graph_div = open_flash_chart_object_and_div_name(700, 400, web_test_statistic_web_data_path(:web_test_id => @web_test.id, :web_task_id => @web_task.id, :format => :js))
   end
   
   
